@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800&display=swap');
+
+body {
+  margin: 0;
+  background-color: var(--color-121212);
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-ffffff);
+}
+
+.screen {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  background-color: var(--color-121212);
+}
+
+/* Highlights area (normalized to screen) */
+.highlights {
+  position: absolute;
+  left: 0px;
+  top: 152px;
+  width: 1920px;
+  height: 444px;
+  overflow: hidden;
+}
+
+/* Center highlight image */
+.highlights .center-image {
+  position: absolute;
+  left: 88px;
+  top: 0px;
+  width: 1744px;
+  height: 444px;
+}
+
+/* Side masks (visual edge fades as solid blocks per style_2 color) */
+.highlights .left-mask {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 68px;
+  height: 444px;
+  background-color: var(--color-d8d8d8);
+  opacity: 0.0; /* Keep structure but non-intrusive since mask effect isn't replicated */
+}
+
+.highlights .right-mask {
+  position: absolute;
+  left: 1872px;
+  top: 0px;
+  width: 48px;
+  height: 444px;
+  background-color: var(--color-d8d8d8);
+  opacity: 0.0;
+}
+
+/* Section: Seguí viendo */
+.section-continue {
+  position: absolute;
+  left: 57px;
+  top: 632px;
+  width: 2251px;
+  height: 368px;
+  overflow: visible;
+}
+
+.section-continue .title {
+  position: absolute;
+  left: 31px; /* 88 - 57 */
+  top: 0px;   /* 632 - 632 */
+}
+
+/* Card 1 */
+.card1 .image {
+  position: absolute;
+  left: 0px;                 /* 57 - 57 */
+  top: 39px;                 /* 671 - 632 */
+  width: 474px;
+  height: 267px;
+}
+.card1 .progress-track-lg {
+  position: absolute;
+  left: 19.558px;            /* 76.558 - 57 */
+  top: 269.172px;            /* 901.172 - 632 */
+  width: 436.034px;
+  height: 18.414px;
+  background-color: var(--color-2c2c2c);
+  border-radius: 9.2px;
+}
+.card1 .progress-fill-lg {
+  position: absolute;
+  left: 24.6px;              /* 81.158 - 57 */
+  top: 273.776px;            /* 905.776 - 632 */
+  width: 176.004px;
+  height: 9.207px;
+  background-color: var(--color-de1717);
+  border-radius: 4.6px;
+}
+.card1 .name-bg {
+  position: absolute;
+  left: 31px;                /* 88 - 57 */
+  top: 288px;                /* 920 - 632 */
+  width: 412px;
+  height: 80px;
+  background-color: var(--color-323131);
+}
+.card1 .name-text {
+  position: absolute;
+  left: 47px;                /* 104 - 57 */
+  top: 312px;                /* 944 - 632 */
+}
+
+/* Delete icon group (render provided SVGs only) */
+.delete-icon {
+  position: absolute;
+  left: 420.0px;             /* 477.044 - 57 */
+  top: 312.222px;            /* 944.222 - 632 */
+  width: 31.429px;
+  height: 34.286px;
+}
+
+/* Yellow control circle (svg provided) */
+.yellow-control {
+  position: absolute;
+  left: 388px;               /* 445 - 57 */
+  top: 319.2px;              /* 951.2 - 632 */
+  width: 20px;
+  height: 20px;
+}
+
+/* Card 2 */
+.card2 .image {
+  position: absolute;
+  left: 483px;               /* 540 - 57 */
+  top: 56px;                 /* 688 - 632 */
+  width: 412px;
+  height: 232px;
+}
+.card2 .progress-track {
+  position: absolute;
+  left: 500px;               /* 557 - 57 */
+  top: 256px;                /* 888 - 632 */
+  width: 379px;
+  height: 16px;
+  background-color: var(--color-2c2c2c);
+  border-radius: 8px;
+}
+.card2 .progress-fill {
+  position: absolute;
+  left: 504px;               /* 561 - 57 */
+  top: 260px;                /* 892 - 632 */
+  width: 153.047px;
+  height: 8px;
+  background-color: var(--color-de1717);
+  border-radius: 4px;
+}
+.card2 .name-bg {
+  position: absolute;
+  left: 483px;               /* 540 - 57 */
+  top: 288px;                /* 920 - 632 */
+  width: 412px;
+  height: 80px;
+  background-color: var(--color-323131);
+}
+.card2 .name-text {
+  position: absolute;
+  left: 499px;               /* 556 - 57 */
+  top: 312px;                /* 944 - 632 */
+}
+
+/* Card 3 */
+.card3 .image {
+  position: absolute;
+  left: 935px;               /* 992 - 57 */
+  top: 56px;
+  width: 412px;
+  height: 232px;
+}
+.card3 .progress-track {
+  position: absolute;
+  left: 952px;               /* 1009 - 57 */
+  top: 256px;
+  width: 379px;
+  height: 16px;
+  background-color: var(--color-2c2c2c);
+  border-radius: 8px;
+}
+.card3 .progress-fill {
+  position: absolute;
+  left: 956px;               /* 1013 - 57 */
+  top: 260px;
+  width: 153.047px;
+  height: 8px;
+  background-color: var(--color-de1717);
+  border-radius: 4px;
+}
+.card3 .name-bg {
+  position: absolute;
+  left: 935px;
+  top: 288px;
+  width: 412px;
+  height: 80px;
+  background-color: var(--color-323131);
+}
+.card3 .name-text {
+  position: absolute;
+  left: 951px;               /* 1008 - 57 */
+  top: 312px;
+}
+
+/* Card 4 */
+.card4 .image {
+  position: absolute;
+  left: 1387px;              /* 1444 - 57 */
+  top: 56px;
+  width: 412px;
+  height: 232px;
+}
+.card4 .progress-track {
+  position: absolute;
+  left: 1404px;              /* 1461 - 57 */
+  top: 256px;
+  width: 379px;
+  height: 16px;
+  background-color: var(--color-2c2c2c);
+  border-radius: 8px;
+}
+.card4 .progress-fill {
+  position: absolute;
+  left: 1408px;              /* 1465 - 57 */
+  top: 260px;
+  width: 153.047px;
+  height: 8px;
+  background-color: var(--color-de1717);
+  border-radius: 4px;
+}
+.card4 .name-bg {
+  position: absolute;
+  left: 1387px;
+  top: 288px;
+  width: 412px;
+  height: 80px;
+  background-color: var(--color-323131);
+}
+.card4 .name-text {
+  position: absolute;
+  left: 1403px;              /* 1460 - 57 */
+  top: 312px;
+}
+
+/* Card 5 */
+.card5 .image {
+  position: absolute;
+  left: 1839px;              /* 1896 - 57 */
+  top: 56px;
+  width: 412px;
+  height: 232px;
+}
+.card5 .progress-track {
+  position: absolute;
+  left: 1856px;              /* 1913 - 57 */
+  top: 256px;
+  width: 379px;
+  height: 16px;
+  background-color: var(--color-2c2c2c);
+  border-radius: 8px;
+}
+.card5 .progress-fill {
+  position: absolute;
+  left: 1860px;              /* 1917 - 57 */
+  top: 260px;
+  width: 153.047px;
+  height: 8px;
+  background-color: var(--color-de1717);
+  border-radius: 4px;
+}
+.card5 .name-bg {
+  position: absolute;
+  left: 1839px;
+  top: 288px;
+  width: 412px;
+  height: 80px;
+  background-color: var(--color-323131);
+}
+.card5 .name-text {
+  position: absolute;
+  left: 1855px;              /* 1912 - 57 */
+  top: 312px;
+}
+
+/* Canales de TV */
+.section-channels {
+  position: absolute;
+  left: 88px;
+  top: 1040px;
+  width: 2318px;
+  height: 277px;
+  overflow: visible;
+}
+.section-channels .title {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+/* Channel Card 1 block */
+.channels-card1 .thumb1 {
+  position: absolute;
+  left: 1px;                 /* 89 - 88 */
+  top: 56px;                 /* 1096 - 1040 */
+  width: 377px;
+  height: 212px;
+}
+.channels-card1 .prog-track {
+  position: absolute;
+  left: 16px;                /* 104 - 88 */
+  top: 248px;                /* 1288 - 1040 */
+  width: 207px;
+  height: 10.4px;
+  background-color: var(--color-2c2c2c);
+  border-radius: 2.4px;
+  opacity: 0.8;
+}
+.channels-card1 .prog-fill {
+  position: absolute;
+  left: 16.8px;              /* 104.8 - 88 */
+  top: 248.8px;              /* 1288.8 - 1040 */
+  width: 80px;
+  height: 8.8px;
+  background-color: var(--color-de1717);
+  border-radius: 1.6px;
+}
+.channels-card1 .details-title {
+  position: absolute;
+  left: 409px;               /* 497 - 88 */
+  top: 72px;                 /* 1108 - 1040 */
+}
+.channels-card1 .details-subtitle {
+  position: absolute;
+  left: 410px;               /* 498 - 88 */
+  top: 126px;                /* 1162 - 1040 */
+}
+.channels-card1 .details-time {
+  position: absolute;
+  left: 410px;
+  top: 219px;                /* 1259 - 1040 */
+}
+.channels-card1 .live-pill {
+  position: absolute;
+  left: 461px;               /* 549 - 88 */
+  top: 172px;                /* 1212 - 1040 */
+  width: 94px;
+  height: 32px;
+  border-radius: 3.81px;
+  background-color: var(--color-eb0045);
+}
+.channels-card1 .live-text {
+  position: absolute;
+  left: 467px;               /* 555 - 88 */
+  top: 177px;                /* 1217 - 1040 */
+}
+
+/* Channel Card 2 block */
+.channels-card2 .thumb1 {
+  position: absolute;
+  left: 746px;               /* 834 - 88 */
+  top: 60px;                 /* 1100 - 1040 */
+  width: 377px;
+  height: 212px;
+}
+.channels-card2 .thumb2 {
+  position: absolute;
+  left: 748px;               /* 836 - 88 */
+  top: 56px;                 /* 1096 - 1040 */
+  width: 374.707px;
+  height: 211px;
+}
+.channels-card2 .prog-track {
+  position: absolute;
+  left: 762px;               /* 850 - 88 */
+  top: 253px;                /* 1293 - 1040 */
+  width: 207px;
+  height: 10.4px;
+  background-color: var(--color-2c2c2c);
+  border-radius: 2.4px;
+  opacity: 0.8;
+}
+.channels-card2 .prog-fill {
+  position: absolute;
+  left: 762.8px;             /* 850.8 - 88 */
+  top: 253.8px;              /* 1293.8 - 1040 */
+  width: 80px;
+  height: 8.8px;
+  background-color: var(--color-de1717);
+  border-radius: 1.6px;
+}
+.channels-card2 .details-title {
+  position: absolute;
+  left: 1154px;              /* 1242 - 88 */
+  top: 72px;                 /* 1112 - 1040 */
+}
+.channels-card2 .details-subtitle {
+  position: absolute;
+  left: 1155px;              /* 1243 - 88 */
+  top: 126px;                /* 1166 - 1040 */
+}
+.channels-card2 .details-time {
+  position: absolute;
+  left: 1155px;
+  top: 223px;                /* 1263 - 1040 */
+}
+.channels-card2 .live-pill {
+  position: absolute;
+  left: 1206px;              /* 1294 - 88 */
+  top: 176px;                /* 1216 - 1040 */
+  width: 94px;
+  height: 32px;
+  border-radius: 3.81px;
+  background-color: var(--color-eb0045);
+}
+.channels-card2 .live-text {
+  position: absolute;
+  left: 1212px;              /* 1300 - 88 */
+  top: 181px;                /* 1221 - 1040 */
+}
+
+/* Channel Card 3 block */
+.channels-card3 .thumb1 {
+  position: absolute;
+  left: 1573px;              /* 1661 - 88 */
+  top: 56px;                 /* 1096 - 1040 */
+  width: 377px;
+  height: 212px;
+}
+.channels-card3 .prog-track {
+  position: absolute;
+  left: 1588px;              /* 1676 - 88 */
+  top: 249px;                /* 1289 - 1040 */
+  width: 207px;
+  height: 10.4px;
+  background-color: var(--color-2c2c2c);
+  border-radius: 2.4px;
+  opacity: 0.8;
+}
+.channels-card3 .prog-fill {
+  position: absolute;
+  left: 1588.8px;            /* 1676.8 - 88 */
+  top: 249.8px;              /* 1289.8 - 1040 */
+  width: 80px;
+  height: 8.8px;
+  background-color: var(--color-de1717);
+  border-radius: 1.6px;
+}
+.channels-card3 .details-title {
+  position: absolute;
+  left: 1981px;              /* 2069 - 88 */
+  top: 68px;                 /* 1108 - 1040 */
+}
+.channels-card3 .details-subtitle {
+  position: absolute;
+  left: 1982px;              /* 2070 - 88 */
+  top: 122px;                /* 1162 - 1040 */
+}
+.channels-card3 .details-time {
+  position: absolute;
+  left: 1982px;
+  top: 219px;                /* 1259 - 1040 */
+}
+.channels-card3 .live-pill {
+  position: absolute;
+  left: 2033px;              /* 2121 - 88 */
+  top: 172px;                /* 1212 - 1040 */
+  width: 94px;
+  height: 32px;
+  border-radius: 3.81px;
+  background-color: var(--color-eb0045);
+}
+.channels-card3 .live-text {
+  position: absolute;
+  left: 2039px;              /* 2127 - 88 */
+  top: 177px;                /* 1217 - 1040 */
+}
+
+/* Header */
+.header {
+  position: absolute;
+  left: 88.72px;
+  top: 36px;
+  width: 1466.28px;
+  height: 74px;
+}
+.header .topnav-bg {
+  position: absolute;
+  left: 396px;
+  top: 40px;
+  width: 1159px;
+  height: 64px;
+  background-color: var(--color-28292f);
+  border-radius: 34px;
+}
+.header .avatar-focus {
+  position: absolute;
+  left: 1466px;
+  top: 36px;
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background-color: var(--color-e84444);
+  opacity: 0.0001;
+}
+.header .avatar {
+  position: absolute;
+  left: 1475px;
+  top: 44px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.header .search {
+  position: absolute;
+  left: 420px; /* wrapper around union paths */
+  top: 54px;
+  width: 36px;
+  height: 36px;
+}
+
+/* Header menu texts */
+.header .menu-inicio { position: absolute; left: 506px; top: 55px; }
+.header .menu-peliculas { position: absolute; left: 626px; top: 55px; }
+.header .menu-series { position: absolute; left: 796px; top: 55px; }
+.header .menu-tv { position: absolute; left: 928px; top: 55px; }
+.header .menu-kids { position: absolute; left: 1113px; top: 55px; }
+.header .menu-mis { position: absolute; left: 1220px; top: 55px; }
+
+/* Active pill */
+.header .active-pill {
+  position: absolute;
+  left: 493px;
+  top: 46px;
+  width: 96px;
+  height: 53px;
+  border-radius: 37px;
+  background-color: var(--color-9b0f0f);
+}
+.header .active-text {
+  position: absolute;
+  left: 504.917px;
+  top: 56px;
+}
+
+/* Logo group wrapper */
+.header .logo {
+  position: absolute;
+  left: 88.72px;
+  top: 51.813px;
+  width: 169.637px;
+  height: 34.356px;
+}

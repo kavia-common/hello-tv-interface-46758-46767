@@ -1,48 +1,44 @@
-import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter, Routes, Route, Link, Navigate } from 'react-router-dom';
 import './App.css';
+import Home from './pages/Home';
+import ContentInfo from './pages/ContentInfo';
 
-// PUBLIC_INTERFACE
+/**
+ * PUBLIC_INTERFACE
+ * App
+ * Main application shell setting up React Router routes and a minimal overlay navigation.
+ * Routes:
+ * - "/" -> Home
+ * - "/content/:id?" -> ContentInfo
+ */
+ // PUBLIC_INTERFACE
 function App() {
-  const [theme, setTheme] = useState('light');
-
-  // Effect to apply theme to document element
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
-  }, [theme]);
-
-  // PUBLIC_INTERFACE
-  const toggleTheme = () => {
-    setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light');
-  };
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <button 
-          className="theme-toggle" 
-          onClick={toggleTheme}
-          aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
-        >
-          {theme === 'light' ? '🌙 Dark' : '☀️ Light'}
-        </button>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          Current theme: <strong>{theme}</strong>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      {/* Overlay navigation shell - small and unobtrusive */}
+      <nav
+        aria-label="App Navigation"
+        style={{
+          position: 'fixed',
+          top: 8,
+          left: 8,
+          zIndex: 1000,
+          background: 'rgba(0,0,0,0.5)',
+          borderRadius: 8,
+          padding: '6px 10px',
+        }}
+      >
+        <Link to="/" style={{ color: '#fff', marginRight: 8, textDecoration: 'none' }}>Home</Link>
+        <Link to="/content/1" style={{ color: '#fff', textDecoration: 'none' }}>Content Info</Link>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/content/:id?" element={<ContentInfo />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

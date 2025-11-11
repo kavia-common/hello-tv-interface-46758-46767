@@ -1,0 +1,132 @@
+:root {
+  /* Colors */
+  --color-121212: #121212;
+  --color-ffffff: #ffffff;
+  --color-d8d8d8: #d8d8d8;
+  --color-979797: #979797;
+  --color-414141: #414141;
+  --color-477f9b: #477f9b;
+  --color-8d4ca7: #8d4ca7;
+  --color-4271d4: #4271d4;
+  --color-2c2c2c: #2c2c2c;
+  --color-de1717: #de1717;
+  --color-323131: #323131;
+  --color-f80000: #f80000;
+  --color-eb0045: #eb0045;
+  --color-000000: #000000;
+  --color-c60000: #c60000;
+  --color-28292f: #28292f;
+  --color-e84444: #e84444;
+  --color-656767: #656767;
+  --color-dadada: #dadada;
+  --color-ababab: #ababab;
+  --color-7f8282: #7f8282;
+  --color-9b0f0f: #9b0f0f;
+  --color-e1251b: #e1251b;
+  --color-e51a1a: #e51a1a;
+  --color-3f9321: #3f9321;
+  --color-f4f4f4: #f4f4f4;
+  --color-282828: #282828;
+
+  /* Typography (subset used by this screen) */
+  --typo-23-family: 'Roboto', sans-serif;
+  --typo-23-size: 30px;
+  --typo-23-weight: 500;
+  --typo-23-line-height: 32px;
+  --typo-23-letter-spacing: -1.8967741728px;
+  --typo-23-text-align: left;
+  --typo-23-color: var(--color-ffffff);
+
+  --typo-24-family: 'Roboto', sans-serif;
+  --typo-24-size: 32px;
+  --typo-24-weight: 400;
+  --typo-24-line-height: 32px;
+  --typo-24-letter-spacing: 0px;
+  --typo-24-text-align: left;
+  --typo-24-color: var(--color-ffffff);
+
+  --typo-25-family: 'Roboto', sans-serif;
+  --typo-25-size: 36px;
+  --typo-25-weight: 700;
+  --typo-25-line-height: 42.1875px;
+  --typo-25-letter-spacing: 0px;
+  --typo-25-text-align: left;
+  --typo-25-color: var(--color-ffffff);
+
+  --typo-26-family: 'Roboto', sans-serif;
+  --typo-26-size: 30px;
+  --typo-26-weight: 400;
+  --typo-26-line-height: 35.15625px;
+  --typo-26-letter-spacing: 0px;
+  --typo-26-text-align: left;
+  --typo-26-color: var(--color-ffffff);
+
+  --typo-27-family: 'Roboto', sans-serif;
+  --typo-27-size: 21.333333px;
+  --typo-27-weight: 500;
+  --typo-27-line-height: 21px;
+  --typo-27-letter-spacing: 0px;
+  --typo-27-text-align: left;
+  --typo-27-color: var(--color-ffffff);
+
+  --typo-28-family: 'Roboto', sans-serif;
+  --typo-28-size: 29px;
+  --typo-28-weight: 400;
+  --typo-28-line-height: 33.984375px;
+  --typo-28-letter-spacing: 0.381579px;
+  --typo-28-text-align: left;
+  --typo-28-color: var(--color-7f8282);
+
+  --typo-29-family: 'Roboto', sans-serif;
+  --typo-29-size: 29px;
+  --typo-29-weight: 700;
+  --typo-29-line-height: 32px;
+  --typo-29-letter-spacing: 0.381579px;
+  --typo-29-text-align: center;
+  --typo-29-color: var(--color-ffffff);
+
+  /* Spacing tokens (generic) */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Shadows */
+  --shadow-3: 0 2px 5px rgba(0,0,0,1);
+
+  /* Style radii (from styles) */
+  --radius-8: 8px;
+  --radius-9-2: 9.2px;
+  --radius-4-6: 4.6px;
+  --radius-4: 4px;
+  --radius-3-81: 3.81px;
+  --radius-2-4: 2.4px;
+  --radius-1-6: 1.6px;
+  --radius-34: 34px;
+  --radius-37: 37px;
+}
+
+* { box-sizing: border-box; }
+
+.fw-abs { position: absolute; }
+.fw-rel { position: relative; }
+.fw-img { object-fit: cover; display: block; }
+.fw-icon { image-rendering: -webkit-optimize-contrast; display: block; }
+
+/* Utility for text styles */
+.typo-23 { font-family: var(--typo-23-family); font-size: var(--typo-23-size); font-weight: var(--typo-23-weight); line-height: var(--typo-23-line-height); letter-spacing: var(--typo-23-letter-spacing); color: var(--typo-23-color); text-align: left; }
+.typo-24 { font-family: var(--typo-24-family); font-size: var(--typo-24-size); font-weight: var(--typo-24-weight); line-height: var(--typo-24-line-height); letter-spacing: var(--typo-24-letter-spacing); color: var(--typo-24-color); text-align: left; }
+.typo-25 { font-family: var(--typo-25-family); font-size: var(--typo-25-size); font-weight: var(--typo-25-weight); line-height: var(--typo-25-line-height); letter-spacing: var(--typo-25-letter-spacing); color: var(--typo-25-color); text-align: left; }
+.typo-26 { font-family: var(--typo-26-family); font-size: var(--typo-26-size); font-weight: var(--typo-26-weight); line-height: var(--typo-26-line-height); letter-spacing: var(--typo-26-letter-spacing); color: var(--typo-26-color); text-align: left; }
+.typo-27 { font-family: var(--typo-27-family); font-size: var(--typo-27-size); font-weight: var(--typo-27-weight); line-height: var(--typo-27-line-height); letter-spacing: var(--typo-27-letter-spacing); color: var(--typo-27-color); text-align: left; }
+.typo-28 { font-family: var(--typo-28-family); font-size: var(--typo-28-size); font-weight: var(--typo-28-weight); line-height: var(--typo-28-line-height); letter-spacing: var(--typo-28-letter-spacing); color: var(--typo-28-color); text-align: left; }
+.typo-29 { font-family: var(--typo-29-family); font-size: var(--typo-29-size); font-weight: var(--typo-29-weight); line-height: var(--typo-29-line-height); letter-spacing: var(--typo-29-letter-spacing); color: var(--typo-29-color); text-align: center; }
+
+/* Helpful focus style for keyboard navigation */
+.tv-focus-grid [data-focusable="true"]:focus,
+.tv-focus-grid [data-focusable="true"].is-focused {
+  outline: 3px solid #F59E0B; /* Ocean Professional secondary */
+  border-radius: 8px;
+  outline-offset: 2px;
+}
